@@ -1,0 +1,33 @@
+1) 새 데이터베이스 만들기
+
+- phpMyAdmin 좌측상단 '새로운' 아이콘 클릭
+- 데이터베이스명 RankingDB 입력
+- 데이터정렬방식 euckr_korean_ci 입력
+- '만들기' 버튼 클릭
+
+
+2) 데이터베이스 RankingDB에 테이블 game 생성
+
+CREATE TABLE `game` (
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `name` varchar(32) NOT NULL,
+  `title` varchar(32) NOT NULL,
+  `score` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+SELECT * FROM game;
+
+
+3) 테이블 game에 레코드 추가 및 검색 실습
+
+INSERT INTO `game` (`id`, `name`, `title`, `score`) VALUES
+(1, 'Number1', 'Tetris', 720),
+(2, 'IamKING', 'Tetris', 690),
+(3, 'IamKING', 'Snake', 720),
+(4, 'Number1', 'Snake', 610),
+(5, '마법사', 'Snake', 350),
+(6, '마법사', 'Tetris', 240),
+(7, '홍길동', 'Tetris', 580),
+(8, '홍길동', 'Snake', 430);
+
+SELECT * FROM game;
