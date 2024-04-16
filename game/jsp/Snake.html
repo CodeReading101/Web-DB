@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- [원본] https://yjyoon-dev.github.io/games/snake.html -->
+<!-- [수정] DB 연동 부분만 추가 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Snake</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="https://blog.yjyoon.dev/games/snake.css">
+    <body>
+        <script type="text/javascript" src="https://blog.yjyoon.dev/games/snake.js"></script>
+        <div id="score">Snake</div>
+        <div id="plus"></div>
+        <script language="javascript">
+            function gameover()	
+            {
+                const name = prompt("당신의 게임 아이디를 입력하세요:", "");
+                document.formm.name.value = name;
+                document.formm.title.value = "Snake";
+                document.formm.score.value = score;
+                document.formm.submit();
+            }
+        </script>
+        <form name = "formm" method = "post" action = "insertSQL.jsp">				
+            <INPUT type = "hidden" NAME="name"> 
+            <INPUT type = "hidden" NAME="title"> 
+            <INPUT type = "hidden" NAME="score"> 
+        </form>  
+    </body>
+</html>
