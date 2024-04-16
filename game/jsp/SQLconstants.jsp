@@ -3,7 +3,7 @@
 	final String mySQL_id = "root"; 	
 
 	// MySQL Password	
-	final String mySQL_password = "Password";
+	final String mySQL_password = "MySQL Password";
 	
 	// MySQL Database
 	final String mySQL_database = "jdbc:mysql://localhost:3306/RankingDB"; 
