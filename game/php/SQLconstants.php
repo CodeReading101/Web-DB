@@ -3,7 +3,7 @@
 	$mySQL_id = "root"; 	
 
 	// MySQL Password	
-	$mySQL_password = "Password";
+	$mySQL_password = "MySQL Password";
 
 	// MySQL Server 
 	$mySQL_host = "localhost";
