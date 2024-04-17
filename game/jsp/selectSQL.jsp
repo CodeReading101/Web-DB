@@ -25,9 +25,9 @@
 		// MySQL 검색 실행 및 결과 출력
 		String query = "select * from game where title = '" + request.getParameter( "title" ) + "' order by score desc;";
 		ResultSet result = stmt.executeQuery( query );
-		for( int i = 1; result.next(); i++ )
+		for( int rank = 1; result.next(); rank++ )
 		{		
-			out.print( "<TR><TD>" + i 
+			out.print( "<TR><TD>" + rank  
 					+ "</TD><TD>" + result.getString( "score" )
 					+ "</TD><TD>"+ result.getString( "name" ) 
 					+ "</TD></TR>" );
