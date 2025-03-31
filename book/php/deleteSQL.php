@@ -23,12 +23,6 @@
 	mysqli_close( $conn );
 ?>
 
-<?php 
-	// 로그 데이터 추출
-	include("./log.php");
-	writeLog( $message );
-?>
-
 <!-- 다음 페이지로 메시지 전달 -->
 <form name = "frm" method = "post" action = "./search.php" >
 	<input type = 'hidden' name = 'message' value = ' * <?php echo str_replace("'", "", $message);?>' >
