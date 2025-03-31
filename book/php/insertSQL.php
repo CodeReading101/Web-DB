@@ -26,14 +26,7 @@
 	} 
 
 	// MySQL 드라이버 연결 해제
-	mysqli_free_result( $result );
 	mysqli_close( $conn );
-?>
-
-<?php 
-	// 로그 데이터 추출
-	include("./log.php");
-	writeLog( $message );
 ?>
 
 <!-- 다음 페이지로 메시지 전달 -->
