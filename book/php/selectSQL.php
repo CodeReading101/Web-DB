@@ -25,9 +25,3 @@
 	mysqli_free_result( $resultSet );
 	mysqli_close( $conn );
 ?>
-
-<?php 
-	// 로그 데이터 추출
-	include("./log.php");
-	writeLog( $message."와 관련된 책을 찾았습니다" );
-?>
