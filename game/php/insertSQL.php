@@ -22,7 +22,6 @@
 	} 
 
 	// MySQL 드라이버 연결 해제
-	mysqli_free_result( $result );
 	mysqli_close( $conn );
 ?>
 
