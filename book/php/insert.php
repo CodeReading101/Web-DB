@@ -16,9 +16,3 @@
 		<INPUT TYPE="button" value="등록" onClick="javascript:document.formm.submit();"> &nbsp; 
 	</BODY>
 </HTML>
-
-<?php 
-	// 로그 데이터 추출
-	include("./log.php");
-	writeLog( "새 책을 등록합니다" );
-?>
