@@ -11,7 +11,7 @@
 
 	// MySQL 책 추가 실행 	
 	$query = "INSERT INTO game( name, title, score ) VALUES ( '".$name."', '".$title."', '".$score."');"; 
-	$resut = mysqli_query( $conn, $query );
+	$result = mysqli_query( $conn, $query );
 	if( !$result ) 
 	{	
 		echo "등록 성공!";
