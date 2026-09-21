@@ -4,8 +4,8 @@
 	{
 		try 
 		{
-			// 로그 파일 : ex) /var/lib/tomcat8/webapps/ROOT/book/jsp/log.txt, /usr/local/tomcat/webapps/ROOT/book/jsp/log.txt
-			final String logFileName = "/usr/libexec/tomcat10/webapps/ROOT/Web-DB/book/jsp/log.txt";	 
+			// 로그 파일 : ex) /var/lib/tomcat8/webapps/ROOT/book/jsp/log.txt, /usr/local/tomcat/webapps/ROOT/book/jsp/log.txt, /usr/libexec/tomcat10/webapps/ROOT/Web-DB/book/jsp/log.txt
+			final String logFileName = "/var/lib/tomcat10/webapps/ROOT/Web-DB/book/jsp/log.txt";	 
 			BufferedWriter writer = new BufferedWriter( new FileWriter( logFileName, true ) );
 
 			// 로그 데이터 출력
