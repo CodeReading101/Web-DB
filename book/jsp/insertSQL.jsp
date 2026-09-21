@@ -17,6 +17,7 @@
 		Class.forName( jdbc_driver ); 
 		Connection con = DriverManager.getConnection( mySQL_database, mySQL_id, mySQL_password ); 
 		Statement stmt = con.createStatement();
+		stmt.execute("SET NAMES utf8mb4");
 
 		// MySQL 책 추가 실행 	
 		String query = "insert into book( id, title, author, publisher, date, image ) values ( '" + id + "', '" + title + "', '" + author + "', '" + publisher + "', '" + date + "', '" + image + "');"; 
