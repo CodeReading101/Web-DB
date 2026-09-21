@@ -4,21 +4,21 @@
 	{
 		try 
 		{
-			// ·Î±× ÆÄÀÏ : ex) /var/lib/tomcat8/webapps/ROOT/book/jsp/log.txt, /usr/local/tomcat/webapps/ROOT/book/jsp/log.txt
-			final String logFileName = "/usr/local/tomcat/webapps/ROOT/book/jsp/log.txt";	 
+			// ë¡œê·¸ íŒŒì¼ : ex) /var/lib/tomcat8/webapps/ROOT/book/jsp/log.txt, /usr/local/tomcat/webapps/ROOT/book/jsp/log.txt
+			final String logFileName = "/usr/libexec/tomcat10/webapps/ROOT/Web-DB/book/jsp/log.txt";	 
 			BufferedWriter writer = new BufferedWriter( new FileWriter( logFileName, true ) );
 
-			// ·Î±× µ¥ÀÌÅÍ Ãâ·Â
-			writer.append( "\nTime:\t" + LocalDate.now() + " " + LocalTime.now() 	// Á¢¼Ó ½Ã°£	
-				+ "\tSessionID:\t" + session.getId()				// Á¢¼Ó ID	
-				+ "\tURI:\t" + request.getRequestURI()				// ÇöÀç ÆäÀÌÁö 
-				+ "\tPrevious:\t" + request.getHeader("referer") 		// Á¢¼Ó °æ·Î(ÀÌÀüÆäÀÌÁö)
-				+ "\tBrowser:\t" + request.getHeader("User-Agent") 		// Á¢¼Ó ºê¶ó¿ìÀú	
+			// ë¡œê·¸ ë°ì´í„° ì¶œë ¥
+			writer.append( "\nTime:\t" + LocalDate.now() + " " + LocalTime.now() 	// ì ‘ì† ì‹œê°„	
+				+ "\tSessionID:\t" + session.getId()				// ì ‘ì† ID	
+				+ "\tURI:\t" + request.getRequestURI()				// í˜„ì¬ í˜ì´ì§€ 
+				+ "\tPrevious:\t" + request.getHeader("referer") 		// ì ‘ì† ê²½ë¡œ(ì´ì „í˜ì´ì§€)
+				+ "\tBrowser:\t" + request.getHeader("User-Agent") 		// ì ‘ì† ë¸Œë¼ìš°ì €	
 				+ "\tMessage:\t" + message );
 
 			writer.close();
 		} 
-		// ¿¹¿Ü Ã³¸®
+		// ì˜ˆì™¸ ì²˜ë¦¬
 		catch (IOException e) 
 		{
 			e.printStackTrace();
