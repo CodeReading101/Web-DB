@@ -12,6 +12,7 @@
 		Class.forName( jdbc_driver ); 
 		Connection con = DriverManager.getConnection( mySQL_database, mySQL_id, mySQL_password ); 
 		Statement stmt = con.createStatement();
+		stmt.execute("SET NAMES utf8mb4");
 
 		// MySQL 점수 등록 실행 	
 		String query = "insert into game( name, title, score ) values ( '" + name + "', '" + title + "', '" + score + "');"; 
