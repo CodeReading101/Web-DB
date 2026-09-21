@@ -21,6 +21,7 @@
 		Class.forName( jdbc_driver ); 
 		Connection con = DriverManager.getConnection( mySQL_database, mySQL_id, mySQL_password ); 
 		Statement stmt = con.createStatement();
+		stmt.execute("SET NAMES utf8mb4");
 
 		// MySQL 검색 실행 및 결과 출력
 		String query = "select * from game where title = '" + request.getParameter( "title" ) + "' order by score desc;";
