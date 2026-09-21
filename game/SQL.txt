@@ -2,7 +2,7 @@
 
 - phpMyAdmin 좌측상단 '새로운' 아이콘 클릭
 - 데이터베이스명 RankingDB 입력
-- 데이터정렬방식 euckr_korean_ci 입력
+- 데이터정렬방식 utf8mb4_general_ci 입력
 - '만들기' 버튼 클릭
 
 
