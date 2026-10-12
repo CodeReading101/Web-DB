@@ -17,7 +17,7 @@
 	// MySQL 책 추가 실행 	
 	$query = "INSERT INTO book( id, title, author, publisher, date, image ) VALUES ( '".$id."', '".$title."', '".$author."', '".$publisher."', '".$date."', '".$image."');"; 
 	$result = mysqli_query( $conn, $query );
-	if( !$result ) 
+	if( $result ) 
 	{	
 		$message = "책(".$title.")을 등록하였습니다"; 
 	} 
